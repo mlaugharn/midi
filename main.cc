@@ -13,7 +13,7 @@
 #endif
 
 // midiout.cpp
-__inline__ void fibbinary(uint64_t& x, uint64_t& y, uint64_t& out){
+__inline__ void fib(uint64_t& x, uint64_t& y, uint64_t& out){
     out = x;
     y = ~(x >> 1);
     x = (x - y) & y;
@@ -72,7 +72,7 @@ int main() {
     uint64_t y = 1;
     uint64_t num;
     while (true) {
-        fibbinary(x, y, num);
+        fib(x, y, num);
         add_bits_notes(num);
         SLEEP(500);
         clear_all_notes();
