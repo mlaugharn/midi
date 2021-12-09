@@ -1,2 +1,2 @@
 # fibo-midi
-fibonacci cube midi chords
+fibonacci midi chords
